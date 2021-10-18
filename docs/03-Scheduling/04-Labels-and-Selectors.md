@@ -116,3 +116,17 @@ For services
 
 K8s Reference Docs:
 - https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
+
+Extra Commands
+```
+kubectl get pods --show-labels
+kubectl get pods -l env=env
+kubectl get pods -l env=env --no-headers | wc -l
+to get all for an env
+kubectl get all -l env=env --no-headers | wc -l
+to get more than one label
+kubectl get pods -l env=env,bu=bu,tier=tier
+```
+
+
+
