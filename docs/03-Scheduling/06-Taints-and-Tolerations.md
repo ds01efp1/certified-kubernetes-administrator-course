@@ -21,6 +21,10 @@ In this section, we will take a look at taints and tolerations.
   ```
   $ kubectl taint nodes node1 app=blue:NoSchedule
   ```
+  To remove a taint
+  ```
+  kubectl taint nodes node1 key1=value1:NoSchedule-
+  ```
   
 - The taint effect defines what would happen to the pods if they do not tolerate the taint.
 - There are 3 taint effects
