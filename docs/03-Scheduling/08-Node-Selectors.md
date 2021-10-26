@@ -29,7 +29,11 @@ In this section, we will take a look at Node Selectors in Kubernetes
   ```
   $ kubectl label nodes node-1 size=Large
    ```
-  
+  To list labels on nodes
+   ```
+   kubectl get nodes --show-labels
+   ``
+   
 ![ln](../../images/ln.PNG)
   
 - To create a pod definition
