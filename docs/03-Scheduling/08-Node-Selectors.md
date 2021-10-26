@@ -32,7 +32,7 @@ In this section, we will take a look at Node Selectors in Kubernetes
   To list labels on nodes
    ```
    kubectl get nodes --show-labels
-   ``
+   ```
    
 ![ln](../../images/ln.PNG)
   
