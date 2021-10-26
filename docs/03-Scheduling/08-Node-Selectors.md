@@ -28,7 +28,7 @@ In this section, we will take a look at Node Selectors in Kubernetes
   Example
   ```
   $ kubectl label nodes node-1 size=Large
-  ```
+   ```
   
 ![ln](../../images/ln.PNG)
   
