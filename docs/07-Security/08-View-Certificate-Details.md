@@ -31,12 +31,14 @@ In this section, we will take a look how to view certificates in a kubernetes cl
 - View logs using kubectl
   ```
   $ kubectl logs etcd-master
+  or
+  kubectl logs -n kube-system etcd-controlplane
   ```
   ![hrd5](../../images/hrd5.PNG)
   
 - View logs using docker ps and docker logs
   ```
-  $ docker ps -a
+  $ docker ps -a | grep etcd
   $ docker logs <container-id>
   ```
   ![hrd6](../../images/hrd6.PNG)
